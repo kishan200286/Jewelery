@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Punjab Jewelers & Fabrics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#header {
+    background-color: #fff;
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu {
+    background-color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#menu span {
+    margin: 0 10px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: solid;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    text-shadow: yellow;
+}
+</style>
+<body>
+    <header id="header">
+		<div class="container">
+			<a href="index.html" id="logo" title="Punjab Jewelers">Punjab Jewelers</a>
+			<div class="right-links">
+				<ul>
+					<li><a href="cart.html"><span class="ico-products"></span></a></li>
+					<li><a href="#"><span class="ico-account"></span>Account</a></li>
+					<li><a href="login.html"><span class="ico-signout"></span>Login/Sign up</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- / container -->
+	</header>
+	<!-- / header -->
+    <nav id="menu">
+		<div class="container">
+            &nbsp;
+			
+            <h2> <span><a href="index.html">Home</a></span></h2>
+		
+		<!-- / container -->
+	</nav>
+    <div class="login-form">
+        <form class="login-form" action="login.php" method="post">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+            <span>Don't have an account? <a href="#" style="color:red;">Sign up</a></span>
+        </div>
+    </div>
+    <footer id="footer">
+		<div class="container">
+			<div class="cols">
+				<div class="col">
+					<h3>Frequently Asked Questions</h3>
+					<ul>
+						<li><a href="#">What is your shipping policy? </a></li>
+						<li><a href="#">Do you offer returns or exchanges?</a></li>
+						<li><a href="#">Are your products ethically sourced?</a></li>
+						<li><a href="#">How can I track my order? </a></li>
+						<li><a href="#">Can I request repairs or resizing for my jewelry? </a></li>
+					</ul>
+				</div>
+				<div class="col media">
+					<h3>Social media</h3>
+					<ul class="social">
+						<li><a href="#"><span class="ico ico-fb"></span>Facebook</a></li>
+						<li><a href="#"><span class="ico ico-tw"></span></a>X</li>
+						<li><a href="#"><span class="ico ico-gp"></span>Google</a></li>
+						<li><a href="#"><span class="ico ico-pi"></span>Pinterest</a></li>
+					</ul>
+				</div>
+				<div class="col contact">
+					<h3>Contact us</h3>
+					<p>Punjab Jewelers INC.<br>54233 Chandigarh<br>Punjab</p>
+					<p><span class="ico ico-em"></span><a href="#">punjabjewelers@gmail.com</a></p>
+					<p><span class="ico ico-ph"></span>9812345678</p>
+				</div>
+				<div class="col newsletter">
+					<h3>Join our newsletter</h3>
+					<p>Please subscribe to get latest product new's from our side</p>
+					<form action="#">
+						<input type="text" placeholder="Your email address...">
+						<button type="submit"></button>
+					</form>
+				</div>
+			</div>
+			<p class="copy">Copyright 2024 Jewelry. All rights reserved.</p>
+		</div>
+		<!-- / container -->
+	</footer>
+</body>
+</html>
+

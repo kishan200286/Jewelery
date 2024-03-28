@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Punjab Jewelers & Fabrics</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group.inline {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group.inline .form-control {
+            width: 48%; /* Adjust width as needed */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .map {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+		<div class="container">
+			<a href="index.html" id="logo" title="Punjab Jewelers">Punjab Jewelers</a>
+			<div class="right-links">
+				<ul>
+					<li><a href="cart.html"><span class="ico-products"></span>3 products, Rs. 4 500.00</a></li>
+					<li><a href="#"><span class="ico-account"></span>Account</a></li>
+					<li><a href="login.html"><span class="ico-signout"></span>Login/Sign up</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- / container -->
+	</header>
+	<!-- / header -->
+    <nav id="menu">
+		<div class="container">
+			<div class="trigger"></div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				
+				
+			</ul>
+		</div>
+		<!-- / container -->
+	</nav>
+    <div id="map-container">
+        <!-- Google Maps API Integration -->
+        <div id="google-map">
+            <!-- Google Maps will be displayed here -->
+        </div>
+    </div>
+
+    <div class="map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8376762179146!2d77.60579277590217!3d12.98223201464343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1689d24ec16d%3A0xb95d15d2169a107d!2sCommercial%20Street%2C%20Tasker%20Town%2C%20Shivaji%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1711638302094!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="submit_contact.php" method="post">
+            <div class="form-group inline">
+                <div class="form-control">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-control">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            <div class="form-group inline">
+                <div class="form-control">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-control">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="query">Query:</label>
+                <textarea id="query" name="query" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Include Google Maps API JavaScript code here -->
+    <script>
+        // Your Google Maps API integration code goes here
+    </script>
+    &nbsp;
+    &nbsp;
+     <footer id="footer">
+		<div class="container">
+			<div class="cols">
+				<div class="col">
+					<h3>Frequently Asked Questions</h3>
+					<ul>
+						<li><a href="#">What is your shipping policy? </a></li>
+						<li><a href="#">Do you offer returns or exchanges?</a></li>
+						<li><a href="#">Are your products ethically sourced?</a></li>
+						<li><a href="#">How can I track my order? </a></li>
+						<li><a href="#">Can I request repairs or resizing for my jewelry? </a></li>
+					</ul>
+				</div>
+				<div class="col media">
+					<h3>Social media</h3>
+					<ul class="social">
+						<li><a href="#"><span class="ico ico-fb"></span>Facebook</a></li>
+						<li><a href="#"><span class="ico ico-tw"></span></a>X</li>
+						<li><a href="#"><span class="ico ico-gp"></span>Google</a></li>
+						<li><a href="#"><span class="ico ico-pi"></span>Pinterest</a></li>
+					</ul>
+				</div>
+				<div class="col contact">
+					<h3>Contact us</h3>
+					<p>Punjab Jewelers INC.<br>54233 Chandigarh<br>Punjab</p>
+					<p><span class="ico ico-em"></span><a href="#">punjabjewelers@gmail.com</a></p>
+					<p><span class="ico ico-ph"></span>9812345678</p>
+				</div>
+				<div class="col newsletter">
+					<h3>Join our newsletter</h3>
+					<p>Please subscribe to get latest product new's from our side</p>
+					<form action="#">
+						<input type="text" placeholder="Your email address...">
+						<button type="submit"></button>
+					</form>
+				</div>
+			</div>
+			<p class="copy">Copyright 2024 Jewelry. All rights reserved.</p>
+		</div>
+		<!-- / container -->
+	</footer>
+	<!-- / footer -->
+
+</body>
+</html>
